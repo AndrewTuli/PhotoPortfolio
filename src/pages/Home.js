@@ -1,6 +1,7 @@
 import React from 'react';
 // import images
 import WomanImg from '../img/home/woman.png';
+import IamPhotographer from '../img/home/iamphotographer2.png';
 // import link
 import { Link } from 'react-router-dom';
 
@@ -16,7 +17,7 @@ const Home = () => {
           lg:w-auto z-10 lg:absolute flex flex-col 
           justify-center items-center lg:items-start'>
           <h1 className='h1'>
-            Sport & Active Life<br/>Photographer
+            Sport & <br/> Active Life<br/>Photographer
           </h1> 
           <p className='text-[26px] lg:text-[36px] 
           font-primary mb-4 lg:mb-12'>Espoo, Finland
@@ -27,7 +28,7 @@ const Home = () => {
         {/** image */}
         <div className='flex justify-end max-h-96 lg:max-h-max'>
           <div className='relative lg:-right-40 overflow-hidden'>
-            <img src={WomanImg} alt='' />
+            <img src={IamPhotographer} alt='' />
           </div>
         </div>
 
