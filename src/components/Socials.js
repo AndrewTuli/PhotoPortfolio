@@ -19,6 +19,10 @@ const Socials = () => {
       <ImInstagram />
     </a>
     </li>
+    <li><a href="https://www.youtube.com/channel/UCTEJydlTqBMoDiw3lpwf2DQ" target="_blank">
+      <ImYoutube />
+    </a>
+    </li>
 
   </ul>
   </div>
