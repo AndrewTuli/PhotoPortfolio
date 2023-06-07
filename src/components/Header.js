@@ -1,7 +1,7 @@
 import React from 'react';
 // import components
 import Socials from './Socials';
-import Logo from '../img/header/logo.svg';
+import Logo from '../img/header/logo.png';
 import MobileNav from './MobileNav';
 
 // import link
@@ -11,7 +11,7 @@ const Header = () => {
   return <header className='fixed w-full px-[30px] 
   lg:px-[100px] z-30 h-[100px] lg:h-[140px] flex items-center'>
     <div className='flex flex-col lg:flex-row lg:items-center w-full justify-between'>
-      {/* logo */}
+      {/* logo [width = 200px] */}
       <Link to={'/'} className='max-w-[200px]'>
         <img src={Logo} alt='' /> 
       </Link> 
