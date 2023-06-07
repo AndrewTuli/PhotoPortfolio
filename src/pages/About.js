@@ -25,20 +25,17 @@ const About = () => {
         items-center lg:items-start'>
           <h1 className='h1'>About me</h1>
           <p className='mb-12 max-w-sm'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Maecenas dapibus ex in nisi cursus, at ultricies urna egestas.
-          Duis iaculis diam ac dui elementum maximus. 
-          Mauris sit amet hendrerit neque. Morbi felis tellus, 
-          dictum sed justo id, varius tempor sapien. 
-          Nullam scelerisque purus pharetra quam congue, 
-          eget placerat orci consequat. 
+          Welcome to my world of capturing moments and preserving memories!
           <br/>
           <br/>
-          Praesent non ligula a est bibendum faucibus. Mauris 
-          quis quam imperdiet, consectetur velit mattis, sodales 
-          augue. Fusce dapibus nisi lacus, et maximus massa fermentum 
-          eget. Nam et turpis gravida, maximus augue eu, sodales ex. 
-          Ut ut pulvinar felis.
+          I am a sports photographer with a passion for immortalizing 
+          the essence of sports events, extreme sports, and the vibrancy of active life. 
+          From speed and agility to strength and victory, I strive to freeze those 
+          fleeting seconds in time. I also love skiing, mountain biking, wildlife, 
+          and travel. 
+          <br/>
+          <br/>
+          Let me find interesting places for you to capture your moments of joy and happiness. Join me on this visual voyage, one click at a time.
           </p>
           <Link to={'/portfolio'} className='btn'>View my work</Link>
         </div>
