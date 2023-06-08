@@ -6,7 +6,7 @@ import MobileNav from './MobileNav';
 
 // import link
 import { Link } from 'react-router-dom';
-// Cursor Context
+// Cursor Context - 
 import { CursorContext } from 'context/CursorContext';
 
 const Header = () => {
