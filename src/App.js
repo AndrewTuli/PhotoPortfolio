@@ -9,6 +9,7 @@ import { motion } from 'framer-motion';
 // import cursor context
 import { CursorContext } from './context/CursorContext';
 
+
 const App = () => {
   const { cursorVariants, cursorBG } = useContext(CursorContext);
   return (
