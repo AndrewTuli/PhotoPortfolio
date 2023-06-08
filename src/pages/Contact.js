@@ -4,9 +4,9 @@ import React, { useContext } from 'react';
 import AboutMeImg from '../img/contact/iamphotographer3.png';
 
 // import motion
-import { motion } from 'framer-motion'
+import { motion } from 'framer-motion';
 // import transition
-import { transition1 } from '../transitions'
+import { transition1 } from '../transitions';
 // Cursor Context refresh from About
 import { CursorContext } from '../context/CursorContext';
 

@@ -1,14 +1,14 @@
 import React, { useContext } from 'react';
 // import images
-import WomanImg from '../img/home/woman.png';
+//import WomanImg from '../img/home/woman.png';
 import IamPhotographer from '../img/home/iamphotographer3.png';
 // import link
 import { Link } from 'react-router-dom'; 
 
 // import motion
-import { motion } from 'framer-motion'
+import { motion } from 'framer-motion';
 // import transition
-import { transition1 } from '../transitions'
+import { transition1 } from '../transitions';
 
 // Cursor Context refresh from About
 import { CursorContext } from '../context/CursorContext';

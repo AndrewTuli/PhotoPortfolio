@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 // import images
-import WomanImg from '../img/about/woman.png';
+//import WomanImg from '../img/about/woman.png';
 import AboutMeImg from '../img/about/aboutme.png';
 
 //import IamPhotographer from '../img/about/iamphotographer2.png';
@@ -8,9 +8,9 @@ import AboutMeImg from '../img/about/aboutme.png';
 import { Link } from 'react-router-dom';
 
 // import motion
-import { motion } from 'framer-motion'
+import { motion } from "framer-motion";
 // import transition
-import { transition1 } from '../transitions'
+import { transition1 } from '../transitions';
 
 // Cursor Context refresh from About
 import { CursorContext } from '../context/CursorContext';
@@ -65,6 +65,7 @@ const About = () => {
 
       </div>
     </motion.section>
+
   );
 };
 

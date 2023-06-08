@@ -1,18 +1,18 @@
 import React, { useContext } from 'react';
 // import images
-import Image1 from '../img/portfolio/slide1_small.jpg'
-import Image2 from '../img/portfolio/slide2_small.jpg'
-import Image3 from '../img/portfolio/20150718-DSC_4640_Small.jpg'
-import Image4 from '../img/portfolio/20140621-DSC_1356_small.jpg'
-import Image5 from '../img/portfolio/20190907-DSC_3197_small.jpg'
-import Image6 from '../img/portfolio/20190928-DSC_3433_small.jpg'
+import Image1 from '../img/portfolio/slide1_small.jpg';
+import Image2 from '../img/portfolio/slide2_small.jpg';
+import Image3 from '../img/portfolio/20150718-DSC_4640_Small.jpg';
+import Image4 from '../img/portfolio/20140621-DSC_1356_small.jpg';
+import Image5 from '../img/portfolio/20190907-DSC_3197_small.jpg';
+import Image6 from '../img/portfolio/20190928-DSC_3433_small.jpg';
 // import link
 import { Link } from 'react-router-dom';
 
 // import motion
-import { motion } from 'framer-motion'
+import { motion } from 'framer-motion';
 // import transition
-import { transition1 } from '../transitions'
+import { transition1 } from '../transitions';
 // Cursor Context refresh from About
 import { CursorContext } from '../context/CursorContext';
 
