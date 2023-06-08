@@ -6,8 +6,9 @@ import MobileNav from './MobileNav';
 
 // import link
 import { Link } from 'react-router-dom';
-// Cursor Context - 
-import { CursorContext } from 'context/CursorContext';
+
+// Cursor Context refresh from About
+import { CursorContext } from '../context/CursorContext';
 
 const Header = () => {
   const { mouseEnterHandler, mouseLeaveHandler } = useContext(CursorContext);

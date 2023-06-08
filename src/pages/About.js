@@ -12,8 +12,8 @@ import { motion } from 'framer-motion'
 // import transition
 import { transition1 } from '../transitions'
 
-// Cursor Context
-import { CursorContext } from 'context/CursorContext';
+// Cursor Context refresh from About
+import { CursorContext } from '../context/CursorContext';
 
 const About = () => {
   const { mouseEnterHandler, mouseLeaveHandler } = useContext(CursorContext);
