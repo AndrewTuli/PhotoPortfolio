@@ -1,40 +1,38 @@
-import React, {useState, useEffect, createContext } from 'react';
+import React, { useState, useEffect, createContext } from 'react';
 
-// Create Context
-export const CursorContext =  createContext();
+// create context
+export const CursorContext = createContext();
 
-const CursorProvider = ({children}) => {
-  // Cursor Position State
+const CursorProvider = ({ children }) => {
+  // cursor position state
   const [cursorPos, setCursorPos] = useState({
     x: 0,
     y: 0,
   });
-
-  // Cursor BG State
+  // cursor bg state
   const [cursorBG, setCursorBG] = useState('default');
 
+  const mobileViewportIsActive = window.innerWidth < 768;
+
   useEffect(() => {
-    const move = (e) => {
-      setCursorPos({
-        x: e.clientX,
-        y: e.clientY,
-      })
+    if (!mobileViewportIsActive) {
+      const move = (e) => {
+        setCursorPos({
+          x: e.clientX,
+          y: e.clientY,
+        });
+      };
+      window.addEventListener('mousemove', move);
+      // remove event
+      return () => {
+        window.removeEventListener('mousemove', move);
+      };
+    } else {
+      setCursorBG('none');
     }
-    // window.addEventListener('mousemove', (e) => {
-    //   console.log(e.clientX, e.clientY);
-    // })
-
-    window.addEventListener('mousemove', move);
-
-    // Remove Event
-    return() => {
-      window.removeEventListener('mousemove', move);
-    };
   });
 
-  // console.log(cursorPos);
-
-  // Cursor Variants
+  // cursor variants
   const cursorVariants = {
     default: {
       x: cursorPos.x - 16,
@@ -48,13 +46,24 @@ const CursorProvider = ({children}) => {
       y: cursorPos.y - 72,
       backgroundColor: '#fff',
       mixBlendMode: 'difference',
-    }
+    },
   };
 
-  return ( 
-  <CursorContext.Provider value={{ cursorVariants, cursorBG }}> 
-    {children}
-  </CursorContext.Provider> 
+  // mouse enter handler
+  const mouseEnterHandler = () => {
+    setCursorBG('text');
+  };
+  // mouse leaver handler
+  const mouseLeaveHandler = () => {
+    setCursorBG('default');
+  };
+
+  return (
+    <CursorContext.Provider
+      value={{ cursorVariants, cursorBG, mouseEnterHandler, mouseLeaveHandler }}
+    >
+      {children}
+    </CursorContext.Provider>
   );
 };
 
