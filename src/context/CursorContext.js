@@ -10,6 +10,9 @@ const CursorProvider = ({children}) => {
     y: 0,
   });
 
+  // Cursor BG State
+  const [cursorBG, setCursorBG] = useState('default');
+
   useEffect(() => {
     const move = (e) => {
       setCursorPos({
@@ -38,10 +41,18 @@ const CursorProvider = ({children}) => {
       y: cursorPos.y - 16,
       backgroundColor: '#0e1112',
     },
+    text: {
+      width: '150px',
+      height: '150px',
+      x: cursorPos.x - 72,
+      y: cursorPos.y - 72,
+      backgroundColor: '#fff',
+      mixBlendMode: 'difference',
+    }
   };
 
   return ( 
-  <CursorContext.Provider value={{ cursorVariants }}> 
+  <CursorContext.Provider value={{ cursorVariants, cursorBG }}> 
     {children}
   </CursorContext.Provider> 
   );
