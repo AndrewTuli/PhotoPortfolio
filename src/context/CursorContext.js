@@ -9,6 +9,7 @@ const CursorProvider = ({ children }) => {
     x: 0,
     y: 0,
   });
+  
   // cursor bg state
   const [cursorBG, setCursorBG] = useState('default');
 
@@ -35,15 +36,15 @@ const CursorProvider = ({ children }) => {
   // cursor variants
   const cursorVariants = {
     default: {
-      x: cursorPos.x - 16,
-      y: cursorPos.y - 16,
+      x: cursorPos.x - 10,
+      y: cursorPos.y - 10,
       backgroundColor: '#0e1112',
     },
     text: {
-      width: '150px',
-      height: '150px',
-      x: cursorPos.x - 72,
-      y: cursorPos.y - 72,
+      width: '100px',
+      height: '100px',
+      x: cursorPos.x - 50,
+      y: cursorPos.y - 50,
       backgroundColor: '#fff',
       mixBlendMode: 'difference',
     },
