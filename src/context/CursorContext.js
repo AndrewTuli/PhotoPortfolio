@@ -1,6 +1,6 @@
 import React, { useState, useEffect, createContext } from 'react';
 
-// create context
+// create context - 
 export const CursorContext = createContext();
 
 const CursorProvider = ({ children }) => {
@@ -9,8 +9,8 @@ const CursorProvider = ({ children }) => {
     x: 0,
     y: 0,
   });
-  
-  // cursor bg state
+
+  // cursor bg state -
   const [cursorBG, setCursorBG] = useState('default');
 
   const mobileViewportIsActive = window.innerWidth < 768;
