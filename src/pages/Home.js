@@ -1,9 +1,10 @@
 import React from 'react';
 // import images
 import WomanImg from '../img/home/woman.png';
-import IamPhotographer from '../img/home/iamphotographer2.png';
+import IamPhotographer from '../img/home/iamphotographer3.png';
 // import link
 import { Link } from 'react-router-dom'; 
+
 // import motion
 import { motion } from 'framer-motion'
 // import transition
@@ -13,10 +14,10 @@ import { transition1 } from '../transitions'
 const Home = () => {
   return (
   <motion.section 
-  initial={{opacity: 1 }}  /** was: initial={{opacity: 0 }}  */
-  animate ={{opactity: 1 }}   
+  initial={{opacity: 0 }}  /** was: initial={{opacity: 0 }}  */
+  animate ={{opacity: 1 }} 
   exit = {{opacity: 0 }}
-  transition={transition1}
+  transition={transition1} 
   className='section'
   >
     <div className='container mx-auto h-full relative'>
@@ -24,8 +25,8 @@ const Home = () => {
       <div className='flex flex-col justify-center'>
         {/** text */}
         <motion.div 
-          initial={{opacity: 1, y: '-50%' }}  /** was: initial={{opacity: 0 }}  */
-          animate ={{opactity: 1, y: 0 }}   
+          initial={{opacity: 0, y: '-50%' }}  /** was: initial={{opacity: 0 }}  */
+          animate ={{opacity: 1, y: 0 }}   
           exit = {{opacity: 0, y: '-50%'  }}
           transition={transition1}
 
@@ -43,9 +44,17 @@ const Home = () => {
 
         {/** image */}
         <div className='flex justify-end max-h-96 lg:max-h-max'>
-          <div className='relative lg:-right-40 overflow-hidden'>
-            <img src={IamPhotographer} alt='' />
-          </div>
+          <motion.div 
+          initial={{ scale:0 }}
+          animate={{ scale:1 }} 
+          exit={{ scale:0 }} 
+          transition={transition1}
+          className='relative lg:-right-40 overflow-hidden'>
+            <motion.img 
+            whileHover={{ scale: 1.1 }}
+            transition={transition1}
+            src={IamPhotographer} alt='' />
+          </motion.div>
         </div>
 
       </div>

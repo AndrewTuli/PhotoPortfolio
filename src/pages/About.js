@@ -7,8 +7,19 @@ import AboutMeImg from '../img/about/aboutme.png';
 // import link
 import { Link } from 'react-router-dom';
 
+// import motion
+import { motion } from 'framer-motion'
+// import transition
+import { transition1 } from '../transitions'
+
 const About = () => {
-  return <section className='section'>
+  return (
+  <motion.section 
+  initial={{ opacity:0, y: '100%'}}
+  animate={{ opacity:1, y: 0}}
+  exit={{ opacity:0, y: '100%'}}
+  transition={transition1}
+  className='section'>
     <div className='container mx-auto h-full relative'>
       {/** text & image wrapper */}
       <div className='flex flex-col lg:flex-row
@@ -43,7 +54,8 @@ const About = () => {
       </div>
 
     </div>
-  </section>;
+  </motion.section>
+  );
 };
 
 export default About;
