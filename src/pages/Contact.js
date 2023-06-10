@@ -8,10 +8,10 @@ import { motion } from 'framer-motion';
 // import transition
 import { transition1 } from '../transitions';
 // Cursor Context refresh from About
-import { CursorContext } from '../context/CursorContext';
+//import { CursorContext } from '../context/CursorContext';
 
 const Contact = () => {
-  const { mouseEnterHandler, mouseLeaveHandler } = useContext(CursorContext);
+  //const { mouseEnterHandler, mouseLeaveHandler } = useContext(CursorContext);
   return ( 
   <motion.section 
   initial={{ opacity:0, y: '100%'}}
@@ -37,8 +37,8 @@ const Contact = () => {
 
         {/* text & form */}
         <div 
-        onMouseEnter={mouseEnterHandler}
-        onMouseLeave={mouseLeaveHandler}
+        //onMouseEnter={mouseEnterHandler}
+        //onMouseLeave={mouseLeaveHandler}
         className='lg:flex-1 lg:pt-32 px-4'>
           <h1 className='h1'>Contact me</h1>
           <p className='mb-12'>I would love to get suggestions from you.</p>

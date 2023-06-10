@@ -11,11 +11,11 @@ import { motion } from 'framer-motion';
 import { transition1 } from '../transitions';
 
 // Cursor Context refresh from About
-import { CursorContext } from '../context/CursorContext';
+//import { CursorContext } from '../context/CursorContext';
 
  
 const Home = () => {
-  const { mouseEnterHandler, mouseLeaveHandler } = useContext(CursorContext);
+  //const { mouseEnterHandler, mouseLeaveHandler } = useContext(CursorContext);
   return (
   <motion.section 
   initial={{opacity: 0 }}  /** was: initial={{opacity: 0 }}  */
@@ -33,8 +33,8 @@ const Home = () => {
           animate ={{opacity: 1, y: 0 }}   
           exit = {{opacity: 0, y: '-50%'  }}
           transition={transition1}
-          onMouseEnter={mouseEnterHandler}
-          onMouseLeave={mouseLeaveHandler}
+          // onMouseEnter={mouseEnterHandler}
+          // onMouseLeave={mouseLeaveHandler}
         className='w-full pt-36 pb-14 lg:pt-0 lg:pb-0 
           lg:w-auto z-10 lg:absolute flex flex-col 
           justify-center items-center lg:items-start'>
@@ -44,11 +44,12 @@ const Home = () => {
           <p className='text-[26px] lg:text-[36px] 
           font-primary mb-4 lg:mb-12'>Espoo, Finland
           </p>
-          <Link to={'/contact'} className='btn mb-[30px]'>hire me</Link>
+          {/* <Link to={'/contact'} className='btn mb-[30px]'>hire me</Link> */}
+          
         </motion.div>
 
-        {/** image */}
-        <div className='flex justify-end max-h-96 lg:max-h-max'>
+        {/* image - image wrapper */}
+        <div className={'flex justify-end max-h-96 lg:max-h-max '}>
           <motion.div 
           initial={{ scale:0 }}
           animate={{ scale:1 }} 

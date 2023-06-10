@@ -13,10 +13,10 @@ import { motion } from "framer-motion";
 import { transition1 } from '../transitions';
 
 // Cursor Context refresh from About
-import { CursorContext } from '../context/CursorContext';
+//import { CursorContext } from '../context/CursorContext';
 
 const About = () => {
-  const { mouseEnterHandler, mouseLeaveHandler } = useContext(CursorContext);
+  //const { mouseEnterHandler, mouseLeaveHandler } = useContext(CursorContext);
   return (
     <motion.section
       initial={{ opacity: 0, y: '100%' }}
@@ -28,7 +28,7 @@ const About = () => {
         {/* text & image wrapper */}
         <div className='flex flex-col lg:flex-row
       h-full items-center justify-center gap-x-24 
-      text-center lg:text-left lg:pt-16'>
+      text-center lg:text-left lg:pt-16' >
 
           {/* image */}
           <div className='flex-1 max-h-96 lg:max-h-max order-2 lg:order-none overflow-hidden'>
@@ -37,8 +37,8 @@ const About = () => {
 
           {/* text */}
           <div
-            onMouseEnter={mouseEnterHandler}
-            onMouseLeave={mouseLeaveHandler}
+            //onMouseEnter={mouseEnterHandler}
+            //onMouseLeave={mouseLeaveHandler}
             className='flex-1 pt-36 pb-14 lg:pt-0 
         lg:w-auto z-10 flex flex-col justify-center 
         items-center lg:items-start'>

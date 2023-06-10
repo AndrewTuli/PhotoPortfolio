@@ -14,10 +14,10 @@ import { motion } from 'framer-motion';
 // import transition
 import { transition1 } from '../transitions';
 // Cursor Context refresh from About
-import { CursorContext } from '../context/CursorContext';
+//import { CursorContext } from '../context/CursorContext';
 
 const Portfolio = () => {
-  const { mouseEnterHandler, mouseLeaveHandler } = useContext(CursorContext);
+  //const { mouseEnterHandler, mouseLeaveHandler } = useContext(CursorContext);
   return (
     <motion.section
       initial={{ opacity: 0, y: '100%' }}
@@ -33,8 +33,8 @@ const Portfolio = () => {
       >
           {/* text */}
           <motion.div
-            onMouseEnter={mouseEnterHandler}
-            onMouseLeave={mouseLeaveHandler}
+            //onMouseEnter={mouseEnterHandler}
+            //onMouseLeave={mouseLeaveHandler}
             className='flex flex-col lg:item-start'>
             <h1 className='h1'>Portfolio</h1>
             <p className='mb-12 max-w-sm'>
