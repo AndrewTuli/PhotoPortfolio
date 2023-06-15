@@ -23,17 +23,17 @@ const About = () => {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: '100%' }}
       transition={transition1}
-      className='section'>
-      <div className='container mx-auto h-full relative'>
+      className='section' 
+      >
+      <div className='container mx-auto h-full relative' >
         {/* text & image wrapper */}
         <div className='flex flex-col lg:flex-row
       h-full items-center justify-center gap-x-24 
-      text-center lg:text-left lg:pt-16' 
-      style={{ height: 'calc(100vh-50px)', overflow: 'auto' }} // Added styles for scrolling
+      text-center lg:text-left lg:pt-16'
       >
 
           {/* image */}
-          <div className='flex-1 max-h-96 lg:max-h-max order-2 lg:order-none overflow-hidden'>
+          <div className='flex-1 max-h-144 lg:max-h-max order-2 lg:order-none overflow-hidden'>
             <img src={AboutMeImg} alt='' />
           </div>
 
@@ -58,9 +58,6 @@ const About = () => {
             </p>
             <Link to={'/portfolio'} className='btn'>View my work</Link>
           </div>
-
-
-
         </div>
 
       </div>
