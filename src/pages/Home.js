@@ -24,9 +24,11 @@ const Home = () => {
   transition={transition1} 
   className='section'
   >
-    <div className='container mx-auto h-full relative'>
+    <div className=' container mx-auto h-full w-full relative'>
       {/** text & img wrapper */}
-      <div className='flex flex-col justify-center'>
+      <div className='flex flex-col justify-center' 
+      style={{ height: 'calc(100vh-50px)', overflow: 'auto' }} // Added styles for scrolling
+      >
         {/** text */}
         <motion.div 
           initial={{opacity: 0, y: '-50%' }}  /** was: initial={{opacity: 0 }}  */
