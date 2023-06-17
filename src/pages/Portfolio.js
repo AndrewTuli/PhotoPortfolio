@@ -28,7 +28,7 @@ const Portfolio = () => {
       <div className='container mx-auto h-full relative'>
         <div className='flex flex-col lg:flex-row h-full 
       items-center justify-start gap-x-24 text-center
-      lg:text-left pt-24 lg:pt-36 pb-8'
+      lg:text-left pt-20 lg:pt-36 pb-8'
       style={{ height: 'calc(100vh-50px)', overflow: 'auto' }} // Added styles for scrolling
       >
           {/* text */}

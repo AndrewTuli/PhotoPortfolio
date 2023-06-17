@@ -31,7 +31,6 @@ const About = () => {
       h-full items-center justify-center gap-x-24 
       text-center lg:text-left lg:pt-16'
       >
-
           {/* image */}
           <div className='flex-1 max-h-192 lg:max-h-max order-2 lg:order-none overflow-hidden'>
             <img src={AboutMeImg} alt='' />
