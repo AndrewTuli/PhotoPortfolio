@@ -33,7 +33,7 @@ const About = () => {
       >
 
           {/* image */}
-          <div className='flex-1 max-h-144 lg:max-h-max order-2 lg:order-none overflow-hidden'>
+          <div className='flex-1 max-h-192 lg:max-h-max order-2 lg:order-none overflow-hidden'>
             <img src={AboutMeImg} alt='' />
           </div>
 

@@ -26,9 +26,7 @@ const Home = () => {
   >
     <div className=' container mx-auto h-full w-full relative'>
       {/** text & img wrapper */}
-      <div className='flex flex-col justify-center' 
-      style={{ height: 'calc(100vh-50px)', overflow: 'auto' }} // Added styles for scrolling
-      >
+      <div className='flex flex-col justify-center'  >
         {/** text */}
         <motion.div 
           initial={{opacity: 0, y: '-50%' }}  /** was: initial={{opacity: 0 }}  */
@@ -51,7 +49,7 @@ const Home = () => {
         </motion.div>
 
         {/* image - image wrapper */}
-        <div className={'flex justify-end max-h-96 lg:max-h-max '}>
+        <div className={'flex justify-end max-h-192 lg:max-h-max'}>
           <motion.div 
           initial={{ scale:0 }}
           animate={{ scale:1 }} 
