@@ -21,8 +21,8 @@ const Contact = () => {
   className='section bg-white'>
     <div className='container mx-auto h-full'>
       <div className='flex flex-col lg:flex-row h-full
-      items-center justify-start pt-36 gap-x-8 text-center 
-      lg: text-left'>
+      items-center justify-start pt-20 gap-x-8 text-center 
+      lg:text-left'>
 
         {/* background? */}
         <motion.div
@@ -84,7 +84,7 @@ const Contact = () => {
           animate={{ opacity:1, y: 0}}
           exit={{ opacity:0, y: '100%'}}
           transition={{ transition: transition1, duration: 1.5 }}
-        className='lg:flex-1'>
+        className='lg:flex-1 max-h-200 '>
           <img src={AboutMeImg} alt='' />
         </motion.div>
 
