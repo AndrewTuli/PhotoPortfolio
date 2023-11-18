@@ -52,7 +52,7 @@ const Portfolio = () => {
             </p>
             <Link to={'/contact'} className='btn mb-[30px]
           mx-auto lg:mx-0'>
-              Hire me
+              contact me
             </Link>
           </motion.div>
           {/* image grid */}

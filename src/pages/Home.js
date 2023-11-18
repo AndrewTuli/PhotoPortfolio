@@ -44,7 +44,7 @@ const Home = () => {
           <p className='text-[26px] lg:text-[36px] 
           font-primary mb-4 lg:mb-12'>Espoo, Finland
           </p>
-          {/* <Link to={'/contact'} className='btn mb-[30px]'>hire me</Link> */}
+          {/* <Link to={'/contact'} className='btn mb-[30px]'>contact me</Link> */}
           
         </motion.div>
 
