@@ -28,9 +28,8 @@ const About = () => {
       <div className='container mx-auto h-full relative' >
         {/* text & image wrapper */}
         <div className='flex flex-col lg:flex-row
-      h-full items-center justify-center gap-x-24 
-      text-center lg:text-left lg:pt-16'
-      style={{ height: 'calc(100vh-50px)', overflow: 'auto' }} // Added styles for scrolling
+      h-full items-center justify-center gap-x-24 gap-y-8 lg:gap-y-0
+      text-center lg:text-left lg:pt-16 pt-8 pb-8 px-4 lg:px-0'
       >
           {/* image */}
           <div className='flex-1 max-h-192 lg:max-h-max order-2 lg:order-none overflow-hidden'>

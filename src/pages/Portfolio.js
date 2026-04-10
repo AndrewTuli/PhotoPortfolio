@@ -26,16 +26,15 @@ const Portfolio = () => {
       transition={transition1}
       className='section'>
       <div className='container mx-auto h-full relative'>
-        <div className='flex flex-col lg:flex-row h-full 
-      items-center justify-start gap-x-24 text-center
-      lg:text-left pt-20 lg:pt-36 pb-8'
-      style={{ height: 'calc(100vh-50px)', overflow: 'auto' }} // Added styles for scrolling
+        <div className='flex flex-col lg:flex-row h-full
+      items-center justify-start gap-x-24 gap-y-8 lg:gap-y-0 text-center
+      lg:text-left pt-20 lg:pt-36 pb-8 px-4 lg:px-0'
       >
           {/* text */}
           <motion.div
             //onMouseEnter={mouseEnterHandler}
             //onMouseLeave={mouseLeaveHandler}
-            className='flex flex-col lg:item-start'>
+            className='flex flex-col lg:items-start'>
             <h1 className='h1'>Portfolio</h1>
             <p className='mb-12 max-w-sm'>
               Welcome to my world of capturing moments and preserving memories!
@@ -56,57 +55,45 @@ const Portfolio = () => {
             </Link>
           </motion.div>
           {/* image grid */}
-          <div className='grid grid-cols-2 lg:gap-2'>
+          <div className='grid grid-cols-2 gap-2 w-full max-w-[540px] lg:max-w-none mx-auto'>
             {/* image */}
-            <div className='max-w-[250px] lg:max-w-[320px] 
-          h-[187px] lg:h-[220px] bg-accent overflow-hidden'>
-              <img className='object-cover h-full lg:h-[220px] 
-            hover:scale-110 transition-all duration-500'
+            <div className='w-full h-[140px] sm:h-[187px] lg:h-[220px] bg-accent overflow-hidden'>
+              <img className='object-cover w-full h-full hover:scale-110 transition-all duration-500'
                 src={Image1}
                 alt=''
               />
             </div>
 
-            <div className='max-w-[250px] lg:max-w-[320px] 
-          h-[187px] lg:h-[220px] bg-accent overflow-hidden'>
-              <img className='object-cover h-full lg:h-[220px] 
-            hover:scale-110 transition-all duration-500'
+            <div className='w-full h-[140px] sm:h-[187px] lg:h-[220px] bg-accent overflow-hidden'>
+              <img className='object-cover w-full h-full hover:scale-110 transition-all duration-500'
                 src={Image2}
                 alt=''
               />
             </div>
 
-            <div className='max-w-[250px] lg:max-w-[320px] 
-          h-[187px] lg:h-[220px] bg-accent overflow-hidden'>
-              <img className='object-cover h-full lg:h-[220px] 
-            hover:scale-110 transition-all duration-500'
+            <div className='w-full h-[140px] sm:h-[187px] lg:h-[220px] bg-accent overflow-hidden'>
+              <img className='object-cover w-full h-full hover:scale-110 transition-all duration-500'
                 src={Image3}
                 alt=''
               />
             </div>
 
-            <div className='max-w-[250px] lg:max-w-[320px] 
-          h-[187px] lg:h-[220px] bg-accent overflow-hidden'>
-              <img className='object-cover h-full lg:h-[220px] 
-            hover:scale-110 transition-all duration-500'
+            <div className='w-full h-[140px] sm:h-[187px] lg:h-[220px] bg-accent overflow-hidden'>
+              <img className='object-cover w-full h-full hover:scale-110 transition-all duration-500'
                 src={Image4}
                 alt=''
               />
             </div>
 
-            <div className='max-w-[250px] lg:max-w-[320px] 
-          h-[187px] lg:h-[220px] bg-accent overflow-hidden'>
-              <img className='object-cover h-full lg:h-[220px] 
-            hover:scale-110 transition-all duration-500'
+            <div className='w-full h-[140px] sm:h-[187px] lg:h-[220px] bg-accent overflow-hidden'>
+              <img className='object-cover w-full h-full hover:scale-110 transition-all duration-500'
                 src={Image5}
                 alt=''
               />
             </div>
 
-            <div className='max-w-[250px] lg:max-w-[320px] 
-          h-[187px] lg:h-[220px] bg-accent overflow-hidden'>
-              <img className='object-cover h-full lg:h-[220px] 
-            hover:scale-110 transition-all duration-500'
+            <div className='w-full h-[140px] sm:h-[187px] lg:h-[220px] bg-accent overflow-hidden'>
+              <img className='object-cover w-full h-full hover:scale-110 transition-all duration-500'
                 src={Image6}
                 alt=''
               />
