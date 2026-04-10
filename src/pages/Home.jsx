@@ -49,7 +49,7 @@ const Home = () => {
         </motion.div>
 
         {/* image - image wrapper */}
-        <div className={'flex justify-end max-h-192 lg:max-h-max'}>
+        <div className={'flex justify-end max-h-[48rem] lg:max-h-max'}>
           <motion.div 
           initial={{ scale:0 }}
           animate={{ scale:1 }} 
